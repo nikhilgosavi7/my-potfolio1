@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhil Gosavi - Student Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+            color: #374151; /* Dark gray text */
+        }
+        .section-heading {
+            border-bottom: 2px solid #6366f1; /* Indigo border */
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        /* Custom scroll behavior for smoother navigation, if added */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Hero section specific styling for subtle animation */
+        .hero-title {
+            animation: fadeInDown 1s ease-out forwards;
+        }
+        .hero-subtitle {
+            animation: fadeInUp 1s ease-out 0.5s forwards;
+        }
+        .hero-cta {
+            animation: zoomIn 1s ease-out 1s forwards;
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes zoomIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+<body class="antialiased flex flex-col min-h-screen">
+
+    <!-- Header/Navigation -->
+    <header class="bg-indigo-700 text-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-tight rounded-md hover:text-indigo-200 transition duration-300">Nikhil's Portfolio</a>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="text-lg hover:text-indigo-200 transition duration-300 rounded-md px-3 py-2">About</a></li>
+                <li><a href="#skills" class="text-lg hover:text-indigo-200 transition duration-300 rounded-md px-3 py-2">Skills</a></li>
+                <li><a href="#projects" class="text-lg hover:text-indigo-200 transition duration-300 rounded-md px-3 py-2">Projects</a></li>
+                <li><a href="#contact" class="text-lg hover:text-indigo-200 transition duration-300 rounded-md px-3 py-2">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section id="hero" class="relative overflow-hidden bg-gradient-to-br from-indigo-600 to-purple-700 text-white py-24 md:py-32 flex items-center justify-center min-h-[400px]">
+            <div class="container mx-auto px-4 max-w-5xl text-center z-10">
+                <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight hero-title opacity-0">
+                    Crafting Solutions with Code
+                </h1>
+                <p class="text-xl md:text-2xl mb-10 hero-subtitle opacity-0">
+                    A dedicated student exploring the world of web development and technology.
+                </p>
+                <a href="#projects" class="inline-block bg-white text-indigo-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-100 transition duration-300 transform hover:scale-105 hero-cta opacity-0">
+                    Explore My Work
+                    <svg class="inline-block ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </div>
+            <!-- Subtle background elements for visual interest -->
+            <div class="absolute inset-0 bg-pattern opacity-10"></div>
+            <div class="absolute top-0 left-0 w-40 h-40 bg-white opacity-5 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+            <div class="absolute bottom-0 right-0 w-60 h-60 bg-white opacity-5 rounded-full translate-x-1/2 translate-y-1/2"></div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 bg-gradient-to-r from-indigo-50 to-purple-50">
+            <div class="container mx-auto px-4 max-w-4xl text-center">
+                <h2 class="text-4xl font-extrabold mb-8 text-indigo-800">Hello there! 👋</h2>
+                <p class="text-xl leading-relaxed text-gray-700 mb-6">
+                    I'm Nikhil Gosavi, a dedicated and enthusiastic 2nd-year student at <strong class="text-indigo-600">Sandip University</strong>.
+                    I'm passionate about technology and always eager to learn and apply my skills to real-world problems.
+                </p>
+                <p class="text-lg text-gray-600">
+                    This portfolio showcases my journey, my growing skill set, and the projects I've been involved in so far.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-16 bg-white">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <h2 class="text-3xl font-bold text-center section-heading text-gray-800 mb-12">My Skills 🚀</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Skill Card -->
+                    <div class="bg-indigo-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                        <h3 class="text-xl font-semibold mb-3 text-indigo-700">Programming Languages</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700">
+                            <li>C</li>
+                            <li>C++</li>
+                            <li>Python</li>
+                            <li>TypeScript</li>
+                        </ul>
+                    </div>
+                    <!-- Skill Card -->
+                    <div class="bg-indigo-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                        <h3 class="text-xl font-semibold mb-3 text-indigo-700">Web Technologies</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+                    <!-- Skill Card -->
+                    <div class="bg-indigo-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                        <h3 class="text-xl font-semibold mb-3 text-indigo-700">Core Concepts</h3>
+                        <ul class="list-disc list-inside space-y-1 text-gray-700">
+                            <li>Network Technology</li>
+                            <li>Information Systems</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <h2 class="text-3xl font-bold text-center section-heading text-gray-800 mb-12">My Projects 💡</h2>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-indigo-200">
+                    <h3 class="text-2xl font-semibold mb-4 text-indigo-700">Health Care Tips</h3>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        This project is designed to provide useful health care tips and information.
+                        It serves as a helpful resource for basic health guidance.
+                    </p>
+                    <a href="https://healthcaretipss.netlify.app/" target="_blank" rel="noopener noreferrer"
+                       class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-5 rounded-lg shadow-md transition duration-300 transform hover:scale-105">
+                        View Project
+                        <svg class="inline-block ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-gradient-to-l from-indigo-50 to-purple-50">
+            <div class="container mx-auto px-4 max-w-4xl text-center">
+                <h2 class="text-3xl font-bold section-heading text-gray-800 mb-12">Connect With Me 🤝</h2>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/nikhil-gosavi-548930319/" target="_blank" rel="noopener noreferrer"
+                       class="flex items-center bg-blue-700 hover:bg-blue-800 text-white font-medium py-3 px-6 rounded-lg shadow-xl transition duration-300 transform hover:-translate-y-1">
+                        <i class="fab fa-linkedin text-xl mr-3"></i>
+                        LinkedIn
+                    </a>
+                    <!-- GitHub -->
+                    <a href="https://github.com/nikhilgosavi7" target="_blank" rel="noopener noreferrer"
+                       class="flex items-center bg-gray-800 hover:bg-gray-900 text-white font-medium py-3 px-6 rounded-lg shadow-xl transition duration-300 transform hover:-translate-y-1">
+                        <i class="fab fa-github text-xl mr-3"></i>
+                        GitHub
+                    </a>
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/nikhil_gosavi7/?__pwa=1#" target="_blank" rel="noopener noreferrer"
+                       class="flex items-center bg-pink-600 hover:bg-pink-700 text-white font-medium py-3 px-6 rounded-lg shadow-xl transition duration-300 transform hover:-translate-y-1">
+                        <i class="fab fa-instagram text-xl mr-3"></i>
+                        Instagram
+                    </a>
+                    <!-- Phone Number -->
+                    <a href="tel:7350005785"
+                       class="flex items-center bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-6 rounded-lg shadow-xl transition duration-300 transform hover:-translate-y-1">
+                        <i class="fas fa-phone-alt text-xl mr-3"></i>
+                        7350005785
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 mt-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Nikhil Gosavi. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
