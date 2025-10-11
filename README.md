@@ -25,6 +25,8 @@ Tailwind CSS: A utility-first CSS framework used for rapid and responsive stylin
 Font Awesome: Provides the social media icons in the contact section.
 
 JavaScript: Used for minor animations and to enhance the user experience.
+
+
 WEBSIDE DIPLOY IN NETLIFY https://nikhillportfoliol.netlify.app/
 Project
 Health Care Tips
